@@ -31,9 +31,9 @@ public class Movie {
         }
     }
 
-    public String getTitle (){
+    public String getTitle() {
         return title;
-    };
+    }
 
     public double getCharge(int daysRented) {
         return price.getCharge(daysRented);

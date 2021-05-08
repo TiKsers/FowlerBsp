@@ -6,7 +6,7 @@ class Customer {
     private final String name;
     private final Vector rentals = new Vector();
 
-    public Customer (String newName) {
+    public Customer(String newName) {
         name = newName;
     }
 
@@ -14,7 +14,7 @@ class Customer {
         rentals.add(arg);
     }
 
-    public String getName (){
+    public String getName() {
         return name;
     }
 
@@ -25,9 +25,8 @@ class Customer {
 
         while (enum_rentals.hasMoreElements()) {
             Rental each = (Rental) enum_rentals.nextElement();
-
             //show figures for this rental
-            result += "\t" + each.getMovie().getTitle()+ "\t" + "\t" + each.getDaysRented() + "\t" + each.getCharge() + "\n";
+            result += "\t" + each.getMovie().getTitle() + "\t" + "\t" + each.getDaysRented() + "\t" + each.getCharge() + "\n";
         }
 
         //add footer lines
